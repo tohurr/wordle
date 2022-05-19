@@ -2,7 +2,7 @@ import './css/App.css';
 import WBoard from './components/WBoard';
 import Keyboard from './components/Keyboard';
 import { createContext, useState} from 'react';
-import { boardDefault } from './Words';
+import React, { boardDefault } from './Words';
 
 export const AppContext = createContext();
 
@@ -15,11 +15,13 @@ function App() {
       </nav>
       
       <AppContext.Provider value= {{board, setWBoard}}>
+        
+      <div className='game'>
       <WBoard />
       <Keyboard />
+      </div>
       </AppContext.Provider>
-      
-    </div>
+      </div>
   );
 }
 

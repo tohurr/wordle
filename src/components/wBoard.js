@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Letter from './Letter'
+import Letter from './Letter';
 
 function WBoard() {
     
   return (
   <div className = 'board'>
-
-      <div className = 'row'> 
+    {""}
+  <div className = 'row'> 
       <Letter letterPos={0} attemptVal={0}/> 
       <Letter letterPos={1} attemptVal={0}/>
       <Letter letterPos={2} attemptVal={0}/>
