@@ -4,7 +4,8 @@ import {AppContext} from '../App.js';
 function Letter({letterPos, attemptVal}) {
     const {board} = useContext(AppContext);
     const letter = board[attemptVal][letterPos];
-  return (<div className = 'letter'> {letter} </div>
+  return (
+  <div className = 'letter'> {letter} </div>
   )
 }
 

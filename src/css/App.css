@@ -27,6 +27,14 @@ nav h1 {
   font-size: 45px;
 }
 
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
 
 .board {
   width: 450px;
@@ -54,15 +62,6 @@ nav h1 {
   font-weight: bolder;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.game {
-  width: 100vw;
-  height: calc(100vh - 170px);
-  display: flex;
-  align-items: center;
-  padding-top: 50px;
-  flex-direction: column;
 }
 
 .keyboard{

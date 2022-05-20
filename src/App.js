@@ -1,23 +1,21 @@
 import './css/App.css';
-import WBoard from './components/WBoard';
+import Board from './components/Board';
 import Keyboard from './components/Keyboard';
 import { createContext, useState} from 'react';
-import React, { boardDefault } from './Words';
+import { boardDefault } from './Words';
 
 export const AppContext = createContext();
 
 function App() {
-  const [board, setWBoard] = useState(boardDefault);
+  const [board, setBoard] = useState(boardDefault);
   return (
-    <div className="App">
+    <div className='App'>
       <nav>
         <h1>Wordle</h1>
       </nav>
-      
-      <AppContext.Provider value= {{board, setWBoard}}>
-        
-      <div className='game'>
-      <WBoard />
+      <AppContext.Provider value={{ board, setBoard }}>
+        <div className='game'>
+      <Board />
       <Keyboard />
       </div>
       </AppContext.Provider>
