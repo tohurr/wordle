@@ -11,7 +11,15 @@ function Key({ keyVal, bigKey }) {
          if (currAttempt.letterPos !==5) return; 
            setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
         
-        } else {
+        } else if (keyVal === 'DELETE') { 
+
+        if (currAttempt.letterPos === 0) return;
+        const currBoard = [...board]
+        currBoard[currAttempt.attempt][currAttempt.letterPos - 1] = '';
+        setBoard(currBoard);
+        setCurrAttempt({...currAttempt, letterPos: currAttempt.letterPos - 1});
+            
+        }  else {
 
         if (currAttempt.letterPos > 4) return;
         const currBoard = [...board]
