@@ -23,7 +23,7 @@ function App() {
   const onEnter = () => {
     if (currAttempt.letterPos !==5) return; 
         setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 });
-  }  
+  };  
 
   const onDelete = () => {
     if (currAttempt.letterPos === 0) return;
@@ -42,8 +42,8 @@ function App() {
       <AppContext.Provider value = 
       {{ board, setBoard, currAttempt, setCurrAttempt, onSelectLetter, 
       onEnter, onDelete, correctWord }}>       
-        <div className='game'>
-      
+        
+      <div className='game'>
       <Board />
       <Keyboard />
       </div>
