@@ -7,13 +7,13 @@ function Letter({letterPos, attemptVal}) {
 
     const correct = correctWord[letterPos] === letter;
 
-    const some = !correctWord && letter !== '' && correctWord.includes(letter);
+    const some = !correct && letter !== '' && correctWord.includes(letter);
 
     const letterState = currAttempt.attempt > attemptVal && 
     (correct ? 'correct' : some ? 'some' : 'error');
 
   return (
-  <div className = 'letter' id = {'letterState'}> {''} {letter} </div>
+  <div className = 'letter' id = {letterState}> {''} {letter} </div>
   );
 }
 

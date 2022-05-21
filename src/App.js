@@ -10,7 +10,7 @@ function App() {
   const [board, setBoard] = useState(boardDefault);
   const [currAttempt, setCurrAttempt] = useState({ attempt: 0, letterPos: 0});
 
-  const correctWord = 'RIGHT'
+  const correctWord = 'REACT'
 
   const onSelectLetter = (keyVal) => {
     if (currAttempt.letterPos > 4) return;

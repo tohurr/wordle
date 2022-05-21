@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(186, 204, 238);
+  background-color: rgb(182, 193, 212);
   width: 100vw;
   height: 100vh;
   color: white;
@@ -23,7 +23,7 @@ nav {
 nav h1 {
   margin: 0;
   font-family: Serif, Arial, sans-serif;
-  color: black;
+  color: rgb(3, 80, 153);
   font-size: 45px;
 }
 
@@ -108,4 +108,16 @@ nav h1 {
 
 #big {
   width: 100px;
+}
+
+#correct{
+  background-color: rgb(33, 148, 33)
+}
+
+#some{
+  background-color: rgb(194, 194, 3)
+}
+
+#error{
+  background-color: rgb(94, 94, 94)
 }
