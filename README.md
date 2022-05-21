@@ -8,7 +8,7 @@ The only correct word for this game is "REACT".
 
 When making this project I got inspiration and help from this youtube video, "Build a Wordle Clone in ReactJS - Best React Project", "https://www.youtube.com/watch?v=WDTNwmXUz2c". 
 
-======================================
+
 In the project directory, you can run:
 
 ### `npm start`
