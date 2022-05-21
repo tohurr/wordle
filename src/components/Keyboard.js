@@ -20,17 +20,17 @@ function Keyboard() {
       
     } else {
       keys1.forEach((key) => {
-        if (event.key === key) {
+        if (event.key.toUpperCase() === key.toUpperCase()) {
           onSelectLetter(key)
         }
       });
       keys2.forEach((key) => {
-        if (event.key === key) {
+        if (event.key.toUpperCase() === key.toUpperCase()) {
           onSelectLetter(key)
         }
       });
       keys3.forEach((key) => {
-        if (event.key === key) {
+        if (event.key.toUpperCase() === key.toUpperCase()) {
           onSelectLetter(key)
         }
       } );
