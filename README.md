@@ -6,6 +6,11 @@ The game is very simple. The user gets 6 tries to guess a 5 letter word that is 
 
 The only correct word for this game is "REACT".
 
+## This is what my Wordle clone web page looks like
+[Wordle Web Page.pdf]
+[Wordle Web Page, 2.pdf]
+
+##
 When making this project I got inspiration and help from this youtube video, "Build a Wordle Clone in ReactJS - Best React Project", "https://www.youtube.com/watch?v=WDTNwmXUz2c". 
 
 ##
